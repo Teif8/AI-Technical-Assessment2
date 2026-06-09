@@ -1,1 +1,0 @@
-# AI-Technical-Assessment2
