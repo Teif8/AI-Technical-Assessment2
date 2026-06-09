@@ -1,38 +1,27 @@
-QuoteForge AI
+# QuoteForge AI
 
-AI-powered quotation generation agent that converts natural language project requests into professional quotations.
+AI-powered quotation generation agent.
 
-Features
+## Features
 
-* AI Requirement Extraction
-* Automated Pricing Calculation
-* VAT Calculation
-* Timeline Estimation
-* Professional Quote Generation
-* Smart Recommendations
+- Natural language project requests
+- Requirement extraction using GPT-4o-mini
+- Automated quotation generation
+- Pricing calculation
+- VAT calculation
+- Timeline estimation
+- Streamlit interface
 
-Tech Stack
+## Setup
 
-* Python
-* Streamlit
-* OpenAI GPT-4o-mini
-* JSON
-* REST API
+1. Install requirements
 
-Example Request
+pip install -r requirements.txt
 
-“We need an 8-page corporate website with SEO, hosting, and maintenance.”
+2. Create .env file
 
-Workflow
+OPENAI_API_KEY=your_api_key
 
-User Request
-→ AI Extraction
-→ Service Mapping
-→ Pricing Engine
-→ VAT Calculation
-→ Timeline Estimation
-→ Quote Generation
+3. Run
 
-Key Design Decision
-
-AI is used to understand project requirements, while all pricing and business calculations are controlled by deterministic business rules to ensure consistency and accuracy.
+streamlit run app.py
